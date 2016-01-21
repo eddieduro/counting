@@ -1,0 +1,50 @@
+
+
+  // if (output === countTo){
+  //   var output = count + count;
+  //   return output;
+  // }
+  //
+  // while (output < countTo) {
+  //   return output;
+  // }
+
+function counting(countBy, countTo){
+ var output = 0;
+ var reps = (countTo / count);
+
+    // var reps = Math.floor(countTo / count);
+    for(var i = countBy; i <= reps; i++){
+      console.log(i);
+      // var output = count + count;
+      // console.log(i)
+      // function addathon(count, countTo){
+    //  function addathon(reps){
+
+        // var count = Math.ceil(count);
+        // var total = count + count;
+
+        // if (isNaN(count))
+        //   return false;
+          // console.log(total);
+      }
+
+    }
+//    return output;
+// }
+
+// }
+
+
+
+$(document).ready(function() {
+  $('form#countForm').submit(function(event){
+    var countBy = parseInt($('input#count').val());
+    var countTo = parseInt($('input#countTo').val());
+
+    var counts = counting(countBy, countTo);
+
+    // document.write(counts);
+    event.preventDefault();
+  });
+});
